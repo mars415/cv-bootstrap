@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+
+    <!-- title -->
+    <title>CV - Marsa Putri Andari</title>
+
+    <!-- CSS styling -->
+    <style>
+      .col-sm-5 {
+        margin: auto;
+        justify-content: center;
+      }
+      .btn {
+        border-radius: 20px;
+      }
+      .collapsible {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        border-radius: 20px;
+        margin-bottom: 15px;
+      }
+      .hobbies-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        margin-bottom: 30px;
+      }
+      .fas {
+        font-size: x-large;
+        margin: 0 10px 0 10px;
+        background-color: #444;
+        color: #fff;
+        padding: 15px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- container for CV header -->
+    <div class="container p-3 my-3 bg-dark text-white">
+      <h1 style="color: white">Marsa Putri Andari</h1>
+      <h4>marsa.andari@yahoo.com</h4>
+    </div>
+
+    <!-- container for contact details -->
+    <div class="container">
+      <h2>Connect With me here!</h2>
+      <a
+        href="https://www.instagram.com/marsaandari/?hl=en"
+        class="btn btn-info"
+        style="background-color: darkblue"
+        role="button"
+        >Instagram</a
+      >
+      <a
+        href="https://www.linkedin.com/in/marsa-andari-6b6aa31b9/"
+        class="btn btn-info"
+        style="background-color: darkblue"
+        role="button"
+        >LinkedIn</a
+      >
+    </div>
+
+    <!-- container for the rest of the CV -->
+    <div class="container pt-3">
+      <!-- profile section -->
+      <h2 style="text-align: center">Profile</h2>
+      <p>
+        A BSc Computer Science student at the Universiti Malaya with speciality
+        in Information Systems. Possess strong leadership and communication
+        skills with fluency in English, Indonesian, and Malay. Keen to gain as
+        many experiences as possible and keep reaching for new opportunities.
+      </p>
+
+      <!-- div row is for education and CCAs -->
+      <div class="row">
+        <!-- div for education -->
+        <div class="col-sm-5">
+          <h2 style="text-align: center">Education</h2>
+          <button
+            data-toggle="collapse"
+            data-target="#edu-um"
+            class="collapsible"
+          >
+            <h5>Universiti Malaya | Kuala Lumpur, Malaysia | 2019-2023</h5>
+          </button>
+          <div id="edu-um" class="collapse">
+            <p>BSc Computer Science (Information Systems)</p>
+          </div>
+          <button
+            data-toggle="collapse"
+            data-target="#edu-sikl"
+            class="collapsible"
+          >
+            <h5>
+              Indonesian School of KL | Kuala Lumpur, Malaysia | 2011-2019
+            </h5>
+          </button>
+          <div id="edu-sikl" class="collapse">
+            <ul>
+              <li>Senior High School</li>
+              <li>Junior High School</li>
+            </ul>
+          </div>
+        </div>
+        <!-- div for CCAs -->
+        <div id="cca-container" class="col-sm-5">
+          <h2 style="text-align: center">CCAs</h2>
+          <button
+            data-toggle="collapse"
+            data-target="#cca-um"
+            class="collapsible"
+          >
+            <h5>PPI Universiti Malaya</h5>
+          </button>
+          <div id="cca-um" class="collapse">
+            <p>
+              As the Media, Information and Communication Division Vice
+              Coordinator
+            </p>
+          </div>
+          <button
+            data-toggle="collapse"
+            data-target="#cca-sikl"
+            class="collapsible"
+          >
+            <h5>Indonesian School of KL</h5>
+          </button>
+          <div id="cca-sikl" class="collapse">
+            <ul>
+              <li>Student Council Art Appretiation Division</li>
+              <li>Student Council Human Relation Division</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievements and Certifications section -->
+      <h2 style="text-align: center">Achievements & Certifications</h2>
+      <ol>
+        <li>Head of Event at SIKL FEST'18 (2018)</li>
+        <li>Participated in KitaHack by DSC Malaysia (2021)</li>
+        <li>
+          Winner of ‘KS2O Information and Communication Technology (ICT)
+          Competition at Indonesian School of KL (2019)
+        </li>
+      </ol>
+
+      <!-- Hobbies and Interests section -->
+      <h2 style="text-align: center">Hobbies & Interests</h2>
+      <div class="hobbies-container">
+        <i class="fas fa-running"></i>
+        <h4>Sports</h4>
+        <i class="fas fa-camera-retro"></i>
+        <h4>Photography</h4>
+      </div>
+
+      <!-- Additional skills section -->
+      <h2 style="text-align: center">Additional Skills</h2>
+      <!-- create bordered table -->
+      <table
+        class="table table-bordered"
+        border="1"
+        width="80%"
+        summary="This table provides information about Additional Skills"
+      >
+        <!-- make header of table dark -->
+        <thead class="thead-dark">
+          <tr>
+            <th>Category</th>
+            <th>Skill Name</th>
+            <th>Proficiency</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td rowspan="3">Language</td>
+            <td>English</td>
+            <td rowspan="2">Fluent</td>
+          </tr>
+          <tr>
+            <td>Malay</td>
+          </tr>
+          <tr>
+            <td>Indonesian</td>
+            <td>Native</td>
+          </tr>
+
+          <tr>
+            <td rowspan="2">Microsoft Office</td>
+            <td>Ms. Word</td>
+            <td rowspan="2">Advanced</td>
+          </tr>
+          <tr>
+            <td>Ms. PowerPoint</td>
+          </tr>
+
+          <tr>
+            <td rowspan="3">Programming</td>
+            <td>Power Director</td>
+            <td rowspan="3">Advanced</td>
+          </tr>
+          <tr>
+            <td>Adobe Illustrator</td>
+          </tr>
+          <tr>
+            <td>Canva</td>
+          </tr>
+
+          <tr>
+            <td rowspan="3">Editing</td>
+            <td>Java</td>
+            <td rowspan="3">Intermediate</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+          </tr>
+          <tr>
+            <td>Javascript</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
